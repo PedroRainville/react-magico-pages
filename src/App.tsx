@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AcceptPropertyPayment from "./pages/AcceptPropertyPayment";
 import PropertyType from "./pages/PropertyType";
+import PropertyExchange from "./pages/PropertyExchange";
+import PropertyTypeSelection from "./pages/PropertyTypeSelection";
+import PropertyLocationMap from "./pages/PropertyLocationMap";
 import PropertyData from "./pages/PropertyData";
 import Commission from "./pages/Commission";
 import DocumentsUpload from "./pages/DocumentsUpload";
@@ -26,6 +29,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/accept-property-payment" element={<AcceptPropertyPayment />} />
           <Route path="/property-type" element={<PropertyType />} />
+          <Route path="/property-exchange" element={<PropertyExchange />} />
+          <Route path="/property-type-selection" element={<PropertyTypeSelection />} />
+          <Route path="/property-location-map" element={<PropertyLocationMap />} />
           <Route path="/property-data" element={<PropertyData />} />
           <Route path="/commission" element={<Commission />} />
           <Route path="/documents-upload" element={<DocumentsUpload />} />

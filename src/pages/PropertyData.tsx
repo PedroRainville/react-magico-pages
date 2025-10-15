@@ -52,6 +52,31 @@ const PropertyData = () => {
             />
           </div>
 
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <Label htmlFor="alqueres" className="text-foreground font-medium mb-2 block">
+                Alqueres
+              </Label>
+              <Input
+                id="alqueres"
+                className="w-full"
+                placeholder="0"
+                type="text"
+              />
+            </div>
+            <div>
+              <Label htmlFor="hectares" className="text-foreground font-medium mb-2 block">
+                Hectares
+              </Label>
+              <Input
+                id="hectares"
+                className="w-full"
+                placeholder="0"
+                type="text"
+              />
+            </div>
+          </div>
+
           <div>
             <Label htmlFor="region" className="text-foreground font-medium mb-2 block">
               Região
