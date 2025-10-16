@@ -15,6 +15,15 @@ import DocumentsUpload from "./pages/DocumentsUpload";
 import MediaUpload from "./pages/MediaUpload";
 import OwnerConfirmation from "./pages/OwnerConfirmation";
 import PropertyList from "./pages/PropertyList";
+import BrokerProfile from "./pages/BrokerProfile";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import EditProfile from "./pages/EditProfile";
+import PrimaryAptitude from "./pages/PrimaryAptitude";
+import PartnerAddress from "./pages/PartnerAddress";
+import Partners from "./pages/Partners";
+import SentInvites from "./pages/SentInvites";
+import RegisteredPartners from "./pages/RegisteredPartners";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +47,15 @@ const App = () => (
           <Route path="/media-upload" element={<MediaUpload />} />
           <Route path="/owner-confirmation" element={<OwnerConfirmation />} />
           <Route path="/property-list" element={<PropertyList />} />
+          <Route path="/broker-profile" element={<BrokerProfile />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/primary-aptitude" element={<PrimaryAptitude />} />
+          <Route path="/partner-address" element={<PartnerAddress />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/sent-invites" element={<SentInvites />} />
+          <Route path="/registered-partners" element={<RegisteredPartners />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
